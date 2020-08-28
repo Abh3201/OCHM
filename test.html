@@ -1,0 +1,50 @@
+<html>
+    
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Signin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="return false;" class="p-sm-3">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="" name="uname" id="recipient-name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="" name="pwd" id="password" required="">
+                            </div>
+                            <div class="right-w3l">
+                                <button type="submit" id = "btnLogin" class="form-control" >Login</button>
+                            </div>
+                            <div class="row sub-w3l my-3">
+                                <div class="col-sm-6 sub-w3_pvt">
+                                    <input type="checkbox" id="brand1" value="">
+                                    <label for="brand1">
+                                        <span></span>Remember me?</label>
+                                </div>
+                                <div class="col-sm-6 forgot-w3l text-sm-right">
+                                    <a href="#" class="text-secondary">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <p class="text-center dont-do modal-footer1">Don't have an account?
+                                <a href="#" data-toggle="modal" data-target="#exampleModal1" class="font-weight-bold" data-blast="color">
+                                    Register Now</a>
+    
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
