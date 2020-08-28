@@ -5,12 +5,12 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
-   
- 
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
+
+
     <title>peace project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
@@ -40,17 +40,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.17.2/firebase-app.js"></script>
-<script src="/__/firebase/7.17.2/firebase-auth.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+    <script src="fire.js"></script>
+    
+    
+    
+    
     <!-- banner -->
     <div id="home">
         <!-- color scheme -->
@@ -76,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <header>
             <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-expand-lg navbar-light navbar-fixed-top">
                 <h1>
-                    <a class="navbar-brand" href="index.php" data-blast="color">
+                    <a class="navbar-brand" href="mainPage.html" data-blast="color">
                         PEACE PROJECT
                     </a>
                 </h1>
@@ -86,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto text-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php" data-blast="color">Home
+                            <a class="nav-link" href="mainPage.html" data-blast="color">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -111,8 +105,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <a class="nav-link scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <button type="button" class="btn  wthree-link-bnr bg-theme rounded-circle text-center mt-lg-0 mt-3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" data-blast="bgColor"> <span class="fa fa-user text-white"></span>
-                    </button>
+                    <a id = 'intro' class="nav-link" data-blast="color">
+                         
+                    </a>
+
+                    <div class="right-w3l">
+                        <button type="submit" id = "btnLogout" data-blast="bgColor" class="form-control" >Logout</button>
+                    </div>
+                            
                 </div>
 
             </nav>
@@ -372,8 +372,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <a class="btn light-bg mt-4 w3_pvt-link-bnr scroll bg-theme1" href="#contact" role="button">contact
                     us
                 </a>
-                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal1" class="btn light-bg mt-4 ml-sm-3 w3_pvt-link-bnr">
-                    make a contribution</a>
+               
             </div>
         </div>
     </div>
@@ -403,7 +402,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li>can save someones life</li>
                             </ul>
                         </div>
-                        <button type="button" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" data-blast="bgColor">
+                        <button type="button" onclick="window.location.href = 'Payment.html';" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false"  data-blast="bgColor">
                             donate now
                         </button>
                     </div>
@@ -425,7 +424,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li>Like no other</li>
                             </ul>
                         </div>
-                        <button type="button" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" data-blast="bgColor">
+                        <button type="button" onclick="window.location.href = 'Payment.html';" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false"  data-blast="bgColor">
                             donate now
                         </button>
                     </div>
@@ -448,7 +447,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li>Live Support</li>
                             </ul>
                         </div>
-                        <button type="button" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" data-blast="bgColor">
+                        <button type="button" onclick="window.location.href = 'Payment.html';" class="btn w3ls-btn bg-theme  d-block" data-toggle="modal" aria-pressed="false"  data-blast="bgColor">
                             donate now
                         </button>
                     </div>
@@ -810,20 +809,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </section>
     <!-- //blog -->
-    <!-- slide -->
-    <div class="abt_bottom py-lg-5 bg-theme" data-blast="bgColor">
-        <div class="container py-sm-4 py-3">
-            <h4 class="abt-text text-capitalize text-sm-center mb-0">Join the Mission to help World</h4>
-            <p class="text-white text-sm-center ">We Move The World To Protect Animals</p>
-            <div class="d-sm-flex justify-content-center">
-                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal" class="btn light-bg mt-sm-4 mt-3 ml-3 w3_pvt-link-bnr">
-                    make a contribution</a>
-                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal1" class="btn light-bg mt-sm-4 mt-3 ml-3 w3_pvt-link-bnr">
-                    become volunteer</a>
-            </div>
-        </div>
-    </div>
-    <!-- //slide -->
+   
     <!-- contact -->
     <section class="contact-wthree py-sm-5 py-4" id="contact">
         <div class="container pt-lg-5">
@@ -941,6 +927,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </footer>
     <!-- //footer -->
+
+    <div id="payment">
+       <?php  header("Location: Payment.php"); ?>
+    </div>
     <!-- login  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -954,7 +944,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body">
                     <form action="#" method="post" class="p-sm-3">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <label for="recipient-name" class="col-form-label">Username</label>
                             <input type="text" class="form-control" placeholder="" name="uname" id="recipient-name" required="">
                         </div>
                         <div class="form-group">
@@ -962,7 +952,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <input type="password" class="form-control" placeholder="" name="pwd" id="password" required="">
                         </div>
                         <div class="right-w3l">
-                            <input type="submit" onclick="toggleSignIn()" class="form-control" value="Login">
+                            <input type="submit" class="form-control" value="Login">
                         </div>
                         <div class="row sub-w3l my-3">
                             <div class="col-sm-6 sub-w3_pvt">
@@ -998,7 +988,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body">
                     <form action="newuser.php" method="post" class="p-sm-3">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Name</label>
+                            <label for="recipient-name" class="col-form-label">Username</label>
                             <input type="text" class="form-control" placeholder="" name="name" id="recipient-rname" required="">
                         </div>
                         <div class="form-group">
@@ -1185,11 +1175,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
+
+    <script src="logout.js"></script>
 </body>
 
 </html>
-
-
-
-<!---------------------------------------------------------------------------------------------------------->
-
