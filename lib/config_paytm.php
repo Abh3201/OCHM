@@ -7,10 +7,10 @@
 - Above details will be different for testing and production environment.
 */
 
-define('PAYTM_ENVIRONMENT', 'TEST'); // PROD
-define('PAYTM_MERCHANT_KEY', 'I&nHzrygOgGDS&2d'); //Change this constant's value with Merchant key received from Paytm.
-define('PAYTM_MERCHANT_MID', 'lrysTv66616486675025'); //Change this constant's value with MID (Merchant ID) received from Paytm.
-define('PAYTM_MERCHANT_WEBSITE', 'WEBSTAGING'); //Change this constant's value with Website name received from Paytm.
+define('PAYTM_ENVIRONMENT', ''); // PROD
+define('PAYTM_MERCHANT_KEY', ''); //Change this constant's value with Merchant key received from Paytm.
+define('PAYTM_MERCHANT_MID', ''); //Change this constant's value with MID (Merchant ID) received from Paytm.
+define('PAYTM_MERCHANT_WEBSITE', ''); //Change this constant's value with Website name received from Paytm.
 
 $PAYTM_STATUS_QUERY_NEW_URL='https://securegw-stage.paytm.in/merchant-status/getTxnStatus';
 $PAYTM_TXN_URL='https://securegw-stage.paytm.in/theia/processTransaction';
